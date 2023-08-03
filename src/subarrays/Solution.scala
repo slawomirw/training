@@ -120,7 +120,7 @@ object Solution extends App {
     println(s"given size 2 test ${t._2} -> $res")
     assert(res == t._1._4)
   }
-  val t5 = testsMaxSumSubarr.zipWithIndex.foreach { t:((Array[Int], Option[(Int, Int)]), Int) =>
+  val t5 = testsMaxSumSubarr.zipWithIndex.foreach { t =>
     val res = findSubarrWhichAddsToMax(t._1._1)
     println(s"max sum subarr test ${t._2} -> $res")
     assert(res == t._1._2)
